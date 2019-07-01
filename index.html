@@ -10,9 +10,15 @@
   <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/jquery.min.js"></script>
   <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/popper.min.js"></script>
   <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/bootstrap.min.js"></script>
+  <!-- model button -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,600,700'>
+  <link rel="stylesheet" href="./style.css">
+  <!-- model button -->
 
-  <!--B.大項-->
-  <!--B1.左右拖模組-->
+
+
+
   <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slick.css">
   <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slick-theme.css">
 
@@ -38,6 +44,7 @@
 
     .slick-slide img {
       width: 100%;
+      height: 100%
     }
 
     .slick-prev:before,
@@ -80,7 +87,15 @@
 
 
 
+<!-- code -->
+<script type="text/javascript" src="">
+  function off(){
+    const nameElement = document.getElementById("大項1蟬吃茶");
+    const name = nameElement.value;
+    console.log(name);
 
+  }
+</script>
 
   <!--c2.品項隨大項變動-->
   <script src="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/C3ConnectB-C/jquery.min.js"></script>
@@ -179,7 +194,7 @@
    取餐按鍵隱藏外送地址輸入-->
   <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D3DeleverAddress/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
+    $(document).ready(function(){
   $("#hide外送地址").click(function(){
     $(".menu外送地址").hide();
   });
@@ -234,8 +249,8 @@
     }
   </style>
 
-<!--E1.左邊浮動按鈕換文字-->
-<script src="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/E1.BtnTxtChg/BtnChg.js"></script>
+  <!--E1.左邊浮動按鈕換文字-->
+  <script src="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/E1.BtnTxtChg/BtnChg.js"></script>
 
 </head>
 
@@ -243,112 +258,100 @@
   <!--建立點餐頁面的大容器-->
 
 
-  <div class="container-fluid ">
 
-
-
-    <!--點餐頁面-->
-
-    <!--B.大項-->
-
-    <!--大容器包含標題與内容-->
+<!-- tag1 -->
+    <!--創造大盒子,製作點餐頁面-->
     <div class="card">
       <!--標題的容器-->
       <div class="card-header col-12 col-sm-12 col-md-12 col-lg-12">
-        <section class="regular slider  col-10 col-sm-10 col-md-10 col-lg-10 " style="margin-top: 30px;">
-
-          <!--1st大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項1蟬吃茶">
-            <label for="male" id="show大項1蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/01菊花茶.jpg">
-            </label>
-          </div>
-
-          <!--2nd大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項2蟬吃茶">
-            <label for="male" id="show大項2蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/02紅茶.jpg">
-            </label>
-          </div>
-
-          <!--3rd大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項3蟬吃茶">
-            <label for="male" id="show大項3蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/03綠茶.jpg" alt="male">
-            </label>
-          </div>
-
-          <!--4th大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項4蟬吃茶">
-            <label for="male" id="show大項4蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/04鐵觀音.jpg">
-            </label>
-          </div>
-
-          <!--5th大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項5蟬吃茶">
-            <label for="male" id="show大項5蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/05白茶.jpg">
-            </label>
-          </div>
-
-          <!--6th大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項6蟬吃茶">
-            <label for="male" id="show大項6蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/06白茶.jpg">
-            </label>
-          </div>
-
-          <!--7th大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項7蟬吃茶">
-            <label for="male" id="show大項7蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/07拿鐵.jpg">
-            </label>
-          </div>
-
-          <!--8th大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項8蟬吃茶">
-            <label for="male" id="show大項8蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/08naicha.jpg">
-            </label>
-          </div>
-
-          <!--9th大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項9蟬吃茶">
-            <label for="male" id="show大項9蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/09卡布奇諾.jpg">
-            </label>
-          </div>
-
-          <!--10th大項-->
-          <div class="card">
-            <input type="radio" name="gender" class="sr-only" id="大項10蟬吃茶">
-            <label for="male" id="show大項10蟬吃茶">
-              <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
-            </label>
-          </div>
-        </section>
+        <h4 class="mb-0">B.大項</h4>
       </div>
 
       <!--内容的容器以section+slider完成左右拖拉功能-->
+      <section class="regular slider  col-10 col-sm-10 col-md-10 col-lg-10 " style="margin-top: 30px;">
 
+        <!--1st大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項1蟬吃茶" value="hi">
+          <label for="male" id="show大項1蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/01菊花茶.jpg">
+          </label>
+        </div>
+
+        <!--2nd大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項2蟬吃茶">
+          <label for="male" id="show大項2蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/02紅茶.jpg">
+          </label>
+        </div>
+
+        <!--3rd大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項3蟬吃茶">
+          <label for="male" id="show大項3蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/03綠茶.jpg" alt="male">
+          </label>
+        </div>
+
+        <!--4th大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項4蟬吃茶">
+          <label for="male" id="show大項4蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/04鐵觀音.jpg">
+          </label>
+        </div>
+
+        <!--5th大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項5蟬吃茶">
+          <label for="male" id="show大項5蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/05白茶.jpg">
+          </label>
+        </div>
+
+        <!--6th大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項6蟬吃茶">
+          <label for="male" id="show大項6蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/06白茶.jpg">
+          </label>
+        </div>
+
+        <!--7th大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項7蟬吃茶">
+          <label for="male" id="show大項7蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/07拿鐵.jpg">
+          </label>
+        </div>
+
+        <!--8th大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項8蟬吃茶">
+          <label for="male" id="show大項8蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/08naicha.jpg">
+          </label>
+        </div>
+
+        <!--9th大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項9蟬吃茶">
+          <label for="male" id="show大項9蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/09卡布奇諾.jpg">
+          </label>
+        </div>
+
+        <!--10th大項-->
+        <div class="card">
+          <input type="radio" name="gender" class="sr-only" id="大項10蟬吃茶">
+          <label for="male" id="show大項10蟬吃茶">
+            <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
+          </label>
+        </div>
+      </section>
       <!--大項内容的容器-->
     </div>
-    <!--大項標題+内容的容器-->
-    <!--B.大項-->
-
-
-    <!--創造大盒子,製作點餐頁面-->
-    <div class="card">
 
       <!--A.取餐方式的盒子-->
 
@@ -372,18 +375,14 @@
             col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
 
               <!--1st大項所有品項的較小容器-->
-              <div class="panel-group" id="accordion"
-               role="tablist" aria-multiselectable="true">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
                 <!--1st大項的品項1容器-->
                 <div class="panel panel-warning">
                   <!--1st大項的品項1外部容器-->
                   <div class="panel-heading" role="tab" id="heading1a">
                     <h4 class="panel-title">
-                      <a class="collapsed" role="button"
-                       data-toggle="collapse"data-parent="#accordion"
-                        href="#collapse1a"
-                       aria-expanded="true" aria-controls="collapse1a">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1a" aria-expanded="true" aria-controls="collapse1a">
                         01蟬吃綠茶
                       </a>
                     </h4>
@@ -394,8 +393,7 @@
                   <!--規格Picker View-->
 
                   <!--1st大項的品項1規格修改標題+内容-->
-                  <div id="collapse1a" class="panel-collapse collapse"
-                  role="tabpanel" aria-labelledby="heading1a">
+                  <div id="collapse1a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1a">
                     <div class="panel-body">
 
                       <!--1st大項的品項1規格修改標題-->
@@ -452,10 +450,7 @@
                   <div class="panel-heading" role="tab" id="heading1b">
                     <!--1st大項的品項2外部容器-->
                     <h4 class="panel-title">
-                      <a class="collapsed" role="button"
-                      data-toggle="collapse" data-parent="#accordion"
-                      href="#collapse1b" aria-expanded="false"
-                      aria-controls="collapse1b">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1b" aria-expanded="false" aria-controls="collapse1b">
                         02蟬吃高山紅茶
                       </a>
                     </h4>
@@ -463,8 +458,7 @@
 
 
                   <!--1st大項的品項2延伸展開修改id-->
-                  <div id="collapse1b" class="panel-collapse collapse"
-                  role="tabpanel" aria-labelledby="heading1b">
+                  <div id="collapse1b" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1b">
                     <div class="panel-body">
 
 
@@ -525,10 +519,7 @@
                   <div class="panel-heading" role="tab" id="heading1c">
                     <!--1st大項的品項3外部容器-->
                     <h4 class="panel-title">
-                      <a class="collapsed" role="button"
-                      data-toggle="collapse" data-parent="#accordion"
-                      href="#collapse1c" aria-expanded="false"
-                      aria-controls="collapse1c">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1c" aria-expanded="false" aria-controls="collapse1c">
                         03蟬吃烏龍飛上天
                       </a>
                     </h4>
@@ -536,8 +527,7 @@
 
 
                   <!--1st大項的品項3延伸展開修改id-->
-                  <div id="collapse1c" class="panel-collapse collapse"
-                  role="tabpanel" aria-labelledby="heading1c">
+                  <div id="collapse1c" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1c">
                     <div class="panel-body">
 
 
@@ -606,8 +596,7 @@
           <section class="container  " style="margin-top: 5px;">
             <div class="row col-8 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
               <!--1st大項所有品項的較小容器-->
-              <div class="panel-group" id="accordion" role="tablist"
-               aria-multiselectable="true">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
 
 
@@ -616,10 +605,7 @@
                   <!--2nd大項的品項1外部容器-->
                   <div class="panel-heading" role="tab" id="heading2a">
                     <h4 class="panel-title">
-                      <a class="collapsed" role="button"
-                      data-toggle="collapse" data-parent="#accordion"
-                      href="#collapse2a" aria-expanded="true"
-                      aria-controls="collapse2a">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2a" aria-expanded="true" aria-controls="collapse2a">
                         01紅奶茶
                       </a>
                     </h4>
@@ -630,8 +616,7 @@
                   <!--規格Picker View-->
 
                   <!--2nd大項的品項1規格修改標題+内容-->
-                  <div id="collapse2a" class="panel-collapse collapse"
-                  role="tabpanel" aria-labelledby="heading2a">
+                  <div id="collapse2a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2a">
                     <div class="panel-body">
 
                       <!--2nd大項的品項1規格修改標題-->
@@ -688,10 +673,7 @@
                   <div class="panel-heading" role="tab" id="heading2b">
                     <!--2nd大項的品項2外部容器-->
                     <h4 class="panel-title">
-                      <a class="collapsed" role="button"
-                      data-toggle="collapse"
-                      data-parent="#accordion" href="#collapse2b"
-                       aria-expanded="false" aria-controls="collapse2b">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2b" aria-expanded="false" aria-controls="collapse2b">
                         02透明奶茶
                       </a>
                     </h4>
@@ -699,9 +681,7 @@
 
 
                   <!--2nd大項的品項2延伸展開修改id-->
-                  <div id="collapse2b" class="panel-collapse collapse"
-                  role="tabpanel"
-                   aria-labelledby="heading2b">
+                  <div id="collapse2b" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2b">
                     <div class="panel-body">
 
 
@@ -784,16 +764,16 @@
 
             <label class="col-12 col-sm-12 col-md-12 col-lg-12 col-form-label form-control-label"> </label>
             <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">2.取餐時間</label>
-           <!--Date time picker寫法-->
+            <!--Date time picker寫法-->
 
-            		<div class="input-group clockpicker">
-            			<input type="text" class="form-control" value="09:30">
-            			<span class="input-group-addon">
-            				<span class="glyphicon glyphicon-time"></span>
-            			</span>
-            		</div>
+            <div class="input-group clockpicker">
+              <input type="text" class="form-control" value="09:30">
+              <span class="input-group-addon">
+                <span class="glyphicon glyphicon-time"></span>
+              </span>
+            </div>
 
-         </div>
+          </div>
 
 
           <!--D3.收貨人名字-->
@@ -836,47 +816,45 @@
           </div>
 
           <!--D8.外送地址-->
-<div class="card-header col-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="card-header col-12 col-sm-12 col-md-12 col-lg-12">
 
-      <!--A.取餐方式的最左邊文字-->
-        <h4 class="mb-0">A.製作訂單
+            <!--A.取餐方式的最左邊文字-->
+            <h4 class="mb-0">A.製作訂單
 
 
-          <!--製作按鈕,點擊會引導接下來跳出新頁面功能-->
-          <button type="button"
-          onClick="location.href='https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/B.%E6%96%B0%E8%9F%AC%E5%90%83%E8%8C%B6%E7%B3%BB%E7%B5%B1(%E6%9F%A5%E7%9C%8B%E6%B8%85%E5%96%AE).html'"
-          class="btn btn-primary col-4 col-sm-4 col-md-4 col-lg-4">
-            上一筆訂單
-          </button>
-          <!--顯示取餐方式的第二個按鍵-->
-          <button type="button" class="btn btn-primary col-4 col-sm-4 col-md-4 col-lg-4  ">
-            建立新訂單
-          </button>
-        </h4>
-</div>
+              <!--製作按鈕,點擊會引導接下來跳出新頁面功能-->
+              <button type="button" onClick="location.href='https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/B.%E6%96%B0%E8%9F%AC%E5%90%83%E8%8C%B6%E7%B3%BB%E7%B5%B1(%E6%9F%A5%E7%9C%8B%E6%B8%85%E5%96%AE).html'" class="btn btn-primary col-4 col-sm-4 col-md-4 col-lg-4">
+                上一筆訂單
+              </button>
+              <!--顯示取餐方式的第二個按鍵-->
+              <button type="button" class="btn btn-primary col-4 col-sm-4 col-md-4 col-lg-4  ">
+                建立新訂單
+              </button>
+            </h4>
+          </div>
 
 
 
 
-    </div>
+        </div>
 
-     <!--C.品項-->
-    <!--品項標題+内容的容器-->
+        <!--C.品項-->
+        <!--品項標題+内容的容器-->
 
-    <div  class="menu外送地址" style="display: none;">
-          <div  class="form-group row  col-12 col-sm-12 col-md-12 col-lg-12" >
+        <div class="menu外送地址" style="display: none;">
+          <div class="form-group row  col-12 col-sm-12 col-md-12 col-lg-12">
 
-            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label" >8.外送地址</label>
+            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">8.外送地址</label>
             <div class="col-9 col-sm-9 col-md-9 col-lg-9">
 
               <input class="form-control" type="text" placeholder="公司/學校/單位地址">
             </div>
           </div>
-</div>
-<!--D9.留空間-->
-<div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
-  <h1> </h1>
-</div>
+        </div>
+        <!--D9.留空間-->
+        <div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
+          <h1> </h1>
+        </div>
 
         <!--結束從A.取餐方式到D.取餐資訊大容器-->
       </div>
@@ -889,26 +867,33 @@
 
     <!--E.浮水印按鈕-->
 
-    <div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="navbar col-12 col-sm-12 col-md-12 col-lg-12">
-       <div id="show">
-        <!--鏈接head檔的E1.左邊浮動按鈕文字修改-->
-        <input id="button左邊浮水印" class="menu" type='button' value='確認訂購'>
-     </div>
-        <input type=button onClick="location.href='https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/B.%E6%96%B0%E8%9F%AC%E5%90%83%E8%8C%B6%E7%B3%BB%E7%B5%B1(%E6%9F%A5%E7%9C%8B%E6%B8%85%E5%96%AE).html'" value='查看清單'>
-        <span class="badge badge-light">9</span>
-        <span class="sr-only">查看清單</span>
+    <div class="row fixed-bottom" style="background-color: #A0CE4E">
+      <div class="col">
+        <a id="button左邊浮水印" href="#" class="button btn2" type='button' value='確認訂購'>
+          <span>結帳!</span>
+        </a>
+      </div>
+      <div class="col">
+        <div id="show">
+          <!--鏈接head檔的E1.左邊浮動按鈕文字修改-->
+        </div>
+
+        <a id="button左邊浮水印" href="#" class="button btn2" type='button' value='查看清單' onClick="location.href='https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/B.%E6%96%B0%E8%9F%AC%E5%90%83%E8%8C%B6%E7%B3%BB%E7%B5%B1(%E6%9F%A5%E7%9C%8B%E6%B8%85%E5%96%AE).html'"
+          value='查看清單'>
+          <span>查看清單</span>
+        </a>
 
       </div>
+
     </div>
 
-</div>
+  </div>
 
 
-<!--整張頁面結束后以下部分為以上功能的js引入,
+  <!--整張頁面結束后以下部分為以上功能的js引入,
   放在最底下才能測則模組存在,進而完成功能-->
 
- <!--注意!D 部分優先放,因爲如果放最後一個模組不會偵測功能-->
+  <!--注意!D 部分優先放,因爲如果放最後一個模組不會偵測功能-->
   <!--D2Timepicker js file inser-->
   <!--Date time picker js setting-->:
   <script type="text/javascript" src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/01DefaultSetting(JS)/jquery.min.js"></script>
@@ -921,13 +906,12 @@
 
 
 
-<!--B大項-->
-<!--B1左右拖拉開功能-->
-<script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slick.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slicktemplate.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/responsive.js" type="text/javascript" charset="utf-8"></script>
-
+  <!--B大項-->
+  <!--B1左右拖拉開功能-->
+  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slick.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slicktemplate.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/responsive.js" type="text/javascript" charset="utf-8"></script>
 
 
 
