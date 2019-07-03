@@ -17,7 +17,9 @@
   <link rel="stylesheet" href="./style.css">
   <!-- model button -->
 
-
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
 
 
   <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slick.css">
@@ -31,8 +33,8 @@
       height: 100%;
     }
 
-    #topbar {
-      background-color: #A0CE4E;
+    .heading1a {
+      padding: 10px 10px;
     }
 
     * {
@@ -76,97 +78,20 @@
   <!--B2.圖片變成按鈕-->
   <link rel="stylesheet" href="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/B2Img2Btn/imgbtn.css">
 
-
-
   <!--C.品項-->
   <!--Collapse Bootstrap 4-->
   <link rel="stylesheet" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C1Collapse/collapse.css">
   <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C1Collapse/collapse.js"></script>
   <link rel="stylesheet" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C1Collapse/font-awesome.min.css">
 
-
-
   <!--規格修改-->
   <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C2ScrollVertical/public.css">
   <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C2ScrollVertical/mobileSelect.css">
   <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C2ScrollVertical/mobileSelect.js" type="text/javascript"></script>
 
-
-
-  <!-- code -->
-
   </script>
-
   <!--c2.品項隨大項變動-->
   <script src="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/C3ConnectB-C/jquery.min.js"></script>
-  <!-- <script>
-
-    $(document).ready(function() {
-      $('#show大項1蟬吃茶').click(function() {
-        $('.menu大項1蟬吃茶').toggle("slide");
-      });
-    });
-
-    $(document).ready(function() {
-      $('#show大項2蟬吃茶').click(function() {
-        $('.menu大項2蟬吃茶').toggle("slide");
-      });
-    });
-
-    $(document).ready(function() {
-      $('#show大項3蟬吃茶').click(function() {
-        $('.menu大項3蟬吃茶').toggle("slide");
-      });
-    });
-
-    $(document).ready(function() {
-      $('#show大項4蟬吃茶').click(function() {
-        $('.menu大項4蟬吃茶').toggle("slide");
-      });
-    });
-
-    $(document).ready(function() {
-      $('#show大項5蟬吃茶').click(function() {
-        $('.menu大項5蟬吃茶').toggle("slide");
-      });
-    });
-
-    $(document).ready(function() {
-      $('#show大項6蟬吃茶').click(function() {
-        $('.menu大項6蟬吃茶').toggle("slide");
-      });
-    });
-
-    $(document).ready(function() {
-      $('#show大項7蟬吃茶').click(function() {
-        $('.menu大項7蟬吃茶').toggle("slide");
-      });
-    });
-
-    $(document).ready(function() {
-      $('#show大項8蟬吃茶').click(function() {
-        $('.menu大項8蟬吃茶').toggle("slide");
-      });
-    });
-
-    $(document).ready(function() {
-      $('#show大項9蟬吃茶').click(function() {
-        $('.menu大項9蟬吃茶').toggle("slide");
-      });
-    });
-
-
-    $(document).ready(function() {
-      $('#show大項10蟬吃茶').click(function() {
-        $('.menu大項10蟬吃茶').toggle("slide");
-      });
-    });
-    $("#test [type=radio]").on("click",function(){
-         alert("hi, eeeidt eeis fired on row "+$(this).data("index"));
-     });
-  </script> -->
-
-
 
 
 
@@ -260,34 +185,21 @@
 
 <body>
   <!--建立點餐頁面的大容器-->
-
-  <table id="test">
-    <tr>
-      <td>List item1</td>
-      <td><input type="radio" value="edit" data-index="1" /></td>
-    </tr>
-    <tr>
-
-      <td><label><input type="radio" value="edit" data-index="2" />1</label></td>
-    </tr>
-
-  </table>
-
+  <div id="topbar" class="d-flex justify-content-center h-5z">
+    <img src="//organic-naturetea.com/wp-content/uploads/2017/08/logo195x31.jpg" alt="">
+  </div>
   <!-- tag1 -->
   <!--創造大盒子,製作點餐頁面-->
   <div class="card">
     <!--標題的容器-->
-    <div id="topbar" class="h-25 d-inline-block card-header col-12 col-sm-12 col-md-12 col-lg-12">
-
-    </div>
 
     <!--内容的容器以section+slider完成左右拖拉功能-->
-    <section class="regular slider  col-10 col-sm-10 col-md-10 col-lg-10 " style="margin-top: 30px;">
+    <section class="regular slider  col-10 col-sm-10 col-md-10 col-lg-10 " style="margin-top: 50px;">
 
       <!--1st大項-->
       <div class="card">
 
-        <input type="radio" value="edit" data-index="1" />
+        <input type="radio" value="edit" class="sr-only" data-index="1" />
         <label for="male" class="haha" data-index="1">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/01菊花茶.jpg">
         </label>
@@ -295,8 +207,8 @@
 
       <!--2nd大項-->
       <div class="card">
-        <input type="radio" name="gender"  id="大項3蟬吃茶">
-        <label for="male" class="haha" data-index="2">
+        <input type="radio" name="gender" class="sr-only">
+        <label for="male" class="haha " data-index="2">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/02紅茶.jpg" alt="male">
         </label>
 
@@ -304,7 +216,7 @@
 
       <!--3rd大項-->
       <div class="card">
-        <input type="radio" name="gender" class="sr-only" id="大項3蟬吃茶">
+        <input type="radio" name="gender" class="sr-only">
         <label for="male" class="haha" data-index="3">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/03綠茶.jpg" alt="male">
         </label>
@@ -312,7 +224,7 @@
 
       <!--4th大項-->
       <div class="card">
-        <input type="radio" name="gender" class="sr-only" id="大項4蟬吃茶">
+        <input type="radio" name="gender" class="sr-only">
         <label for="male" class="haha" data-index="4">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/04鐵觀音.jpg">
         </label>
@@ -320,7 +232,7 @@
 
       <!--5th大項-->
       <div class="card">
-        <input type="radio" name="gender" class="sr-only" id="大項5蟬吃茶">
+        <input type="radio" name="gender" class="sr-only">
         <label for="male" class="haha" data-index="5">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/05白茶.jpg">
         </label>
@@ -328,7 +240,7 @@
 
       <!--6th大項-->
       <div class="card">
-        <input type="radio" name="gender" class="sr-only" id="大項6蟬吃茶">
+        <input type="radio" name="gender" class="sr-only">
         <label for="male" class="haha" data-index="6">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/06白茶.jpg">
         </label>
@@ -336,7 +248,7 @@
 
       <!--7th大項-->
       <div class="card">
-        <input type="radio" name="gender" class="sr-only" id="大項7蟬吃茶">
+        <input type="radio" name="gender" class="sr-only">
         <label for="male" class="haha" data-index="7">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/07拿鐵.jpg">
         </label>
@@ -344,7 +256,7 @@
 
       <!--8th大項-->
       <div class="card">
-        <input type="radio" name="gender" class="sr-only" id="大項8蟬吃茶">
+        <input type="radio" name="gender" class="sr-only">
         <label for="male" class="haha" data-index="8">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/08naicha.jpg">
         </label>
@@ -352,7 +264,7 @@
 
       <!--9th大項-->
       <div class="card">
-        <input type="radio" name="gender" class="sr-only" id="大項9蟬吃茶">
+        <input type="radio" name="gender" class="sr-only">
         <label for="male" class="haha" data-index="9">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/09卡布奇諾.jpg">
         </label>
@@ -360,7 +272,7 @@
 
       <!--10th大項-->
       <div class="card">
-        <input type="radio" name="gender" class="sr-only" id="大項10蟬吃茶">
+        <input type="radio" name="gender" class="sr-only">
         <label for="male" class="haha" data-index="10">
           <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
         </label>
@@ -373,9 +285,6 @@
 
   <div class="card">
     <!--品項標題的容器-->
-    <div class="card-header col-12 col-sm-12 col-md-12 col-lg-12">
-      <h4 class="mb-0">C.品項</h4>
-    </div>
 
 
     <!--品項内容的容器-->
@@ -387,11 +296,10 @@
     <div class="menu大項1蟬吃茶" style="display: none;">
       <!--1st大項所有品項的較大盒子-->
       <section class="container  " style="margin-top: 5px;">
-        <div class="row col-8 col-sm-8 col-md-8 col-lg-8
-            col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+        <div class="row d-flex justify-content-around">
 
           <!--1st大項所有品項的較小容器-->
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="d-flex justify-content-around" id="accordion" role="tablist" aria-multiselectable="true">
 
             <!--1st大項的品項1容器-->
             <div class="panel panel-warning">
@@ -409,7 +317,7 @@
               <!--規格Picker View-->
 
               <!--1st大項的品項1規格修改標題+内容-->
-              <div id="collapse1a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1a">
+              <div id="collapse1a" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading1a">
                 <div class="panel-body">
 
                   <!--1st大項的品項1規格修改標題-->
@@ -884,27 +792,38 @@
   <!--E.浮水印按鈕-->
 
   <div class="row fixed-bottom" style="background-color: #A0CE4E">
-    <div class="col">
+
+
+      <div class="col d-flex justify-content-around">
+            確定購買
+          </div>
+          <div class="col d-flex justify-content-around">
+            購物車
+
+          </div>
+
+
+    <!-- <div class="col">
       <a id="button左邊浮水印" href="#" class="button btn2" type='button' value='確認訂購'>
         <span>結帳!</span>
       </a>
     </div>
+
     <div class="col">
       <div id="show">
-        <!--鏈接head檔的E1.左邊浮動按鈕文字修改-->
-      </div>
 
+      </div>
       <a id="button左邊浮水印" href="#" class="button btn2" type='button' value='查看清單' onClick="location.href='https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/B.%E6%96%B0%E8%9F%AC%E5%90%83%E8%8C%B6%E7%B3%BB%E7%B5%B1(%E6%9F%A5%E7%9C%8B%E6%B8%85%E5%96%AE).html'"
         value='查看清單'>
         <span>查看清單</span>
       </a>
 
-    </div>
+    </div> -->
 
   </div>
 
   </div>
-
+        <!--鏈接head檔的E1.左邊浮動按鈕文字修改-->
 
   <!--整張頁面結束后以下部分為以上功能的js引入,
   放在最底下才能測則模組存在,進而完成功能-->
@@ -931,7 +850,7 @@
 
 
 
-<!-- 20190703 修復選單不自動收回 -->
+  <!-- 20190703 修復選單不自動收回 -->
   <script type="text/javascript">
     var number = 1;
     $('.menu大項' + number + '蟬吃茶').toggle("slide");
