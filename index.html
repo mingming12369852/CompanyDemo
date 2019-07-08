@@ -8,22 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/bootstrap.min.css">
-  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/jquery.min.js"></script>
-  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/popper.min.js"></script>
-  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/bootstrap.min.js"></script>
-  <!-- model button -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,600,700'>
-  <link rel="stylesheet" href="./style.css">
-  <!-- model button -->
+
 
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
 
-
-  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slick.css">
-  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slick-theme.css">
 
   <style type="text/css">
     html,
@@ -31,6 +21,12 @@
       margin: 0;
       padding: 0;
       height: 100%;
+    }
+
+
+    #button_home {
+      width: 25%;
+      height: 55%;
     }
 
     .heading1a {
@@ -94,9 +90,10 @@
   <script src="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/C3ConnectB-C/jquery.min.js"></script>
 
 
-
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <!--D.取餐資訊Hide&Display-->
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   <!--D1.取餐資訊標題按下后顯示隱藏文字-->
   <script src="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/D1TitleHideDisplay/jquery.min.js"></script>
   <script>
@@ -179,18 +176,23 @@
   </style>
 
   <!--E1.左邊浮動按鈕換文字-->
-  <script src="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/E1.BtnTxtChg/BtnChg.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
+
+
+
   <!--建立點餐頁面的大容器-->
   <div id="topbar" class="d-flex justify-content-center h-5z">
-    <img src="//organic-naturetea.com/wp-content/uploads/2017/08/logo195x31.jpg" alt="">
+    <img src="img/logo.jpg" alt="">
   </div>
+
   <!-- tag1 -->
   <!--創造大盒子,製作點餐頁面-->
-  <div class="card">
+<div class="w-auto p-3 mh-100" style="height: 100px; background-color: rgba(255,0,0,0.1);">
+  <div class="card ">
     <!--標題的容器-->
 
     <!--内容的容器以section+slider完成左右拖拉功能-->
@@ -201,7 +203,7 @@
 
         <input type="radio" value="edit" class="sr-only" data-index="1" />
         <label for="male" class="haha" data-index="1">
-          <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/01菊花茶.jpg">
+          <img src="img/01菊花茶.jpg">
         </label>
       </div>
 
@@ -280,9 +282,12 @@
     </section>
     <!--大項内容的容器-->
   </div>
+</div>
 
   <!--A.取餐方式的盒子-->
+<div class="h-25 d-inline-block">
 
+</div>
   <div class="card">
     <!--品項標題的容器-->
 
@@ -295,7 +300,7 @@
     <!--1st大項的隨著變動功能(放在整個容器前面,功能才會實現)-->
     <div class="menu大項1蟬吃茶" style="display: none;">
       <!--1st大項所有品項的較大盒子-->
-      <section class="container  " style="margin-top: 5px;">
+      <section class="container h-auto d-inline-block  " style="margin-top: 5px;">
         <div class="row d-flex justify-content-around">
 
           <!--1st大項所有品項的較小容器-->
@@ -775,10 +780,6 @@
         </div>
       </div>
     </div>
-    <!--D9.留空間-->
-    <div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
-      <h1> </h1>
-    </div>
 
     <!--結束從A.取餐方式到D.取餐資訊大容器-->
   </div>
@@ -791,16 +792,22 @@
 
   <!--E.浮水印按鈕-->
 
-  <div class="row fixed-bottom" style="background-color: #A0CE4E">
+  <div id="button-bar" class="row fixed-bottom">
 
 
-      <div class="col d-flex justify-content-around">
-            確定購買
-          </div>
-          <div class="col d-flex justify-content-around">
-            購物車
+    <div class="col d-flex justify-content-around align-items-end">
+      <a href="#" class="" style="color:#000" size="3">
+        <h3>修改訂單</h3>
+      </a>
 
-          </div>
+
+    </div>
+    <div id="button_determine" class="col d-flex justify-content-center align-items-center" style="background-color: #A0CE4E ">
+      <a href="#" class="" style="color:#fff" size="3">
+        <h3>確定購買</h3>
+      </a>
+
+    </div>
 
 
     <!-- <div class="col">
@@ -823,7 +830,7 @@
   </div>
 
   </div>
-        <!--鏈接head檔的E1.左邊浮動按鈕文字修改-->
+  <!--鏈接head檔的E1.左邊浮動按鈕文字修改-->
 
   <!--整張頁面結束后以下部分為以上功能的js引入,
   放在最底下才能測則模組存在,進而完成功能-->
@@ -847,6 +854,10 @@
   <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slick.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/slicktemplate.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/B1ScrollHorizontal/responsive.js" type="text/javascript" charset="utf-8"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
 
