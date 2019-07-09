@@ -1,98 +1,32 @@
-<html>
 
-<head>
-  <title>My Now Amazing Webpage</title>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <!-- bootstrap  -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    </body>
-  <!-- bootstrap -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <style media="screen">
-    .slick-slide{
-  height: 15%;
-}
-.slick-dots li button:before{
-
-  content:"O";
-}
-</style>
-</head>
-
-<body>
-  <div id="topbar" class="d-flex justify-content-center h-5z img-fluid">
-    <img src="img/logo.jpg" alt="">
-  </div>
-  <div class="s">
-    <div class="responsive ">
-      <div> <input type="radio" name="gender" class="sr-only">
-        <label for="male" class="haha " data-index="2">
-          <img src="img/01菊花茶.jpg" alt="male">
-        </label></div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-    </div>
-  </div>
-
-
-
-</body>
-
-
-<script type="text/javascript">
-  $(document).ready(function() {
-
-    $('.responsive').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [{
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-
-  });
-</script>
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    .redpoint{
+      display:inline-block;
+      height:16px;
+      width:16px;
+      line-height:16px;
+      text-align:center;
+      font-size:0.1em;
+      border-radius:16px;
+      color:#fff;
+      background:red;
+        position: relative;
+        top: -8px;
+        right: 8px;
+    }
+    </style>
+  </head>
+  <body>
+    <span>
+      消息
+    </span>
+    <span class="redpoint">
+      4
+    </span>
+  </body>
 </html>
