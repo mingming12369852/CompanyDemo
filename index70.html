@@ -20,7 +20,7 @@
 	<script>
 
 
-	function Jump(){
+		function Jump(){
 		$(document).ready(function () {setTimeout(function(){
 							 $.mobile.changePage("https://www.facebook.com/%E8%9F%AC%E5%90%83%E8%8C%B6%E3%81%AE%E5%A4%A9%E7%84%B6%E8%8C%B6%E9%A3%B2-%E5%90%B3%E8%88%88%E7%B8%BD%E5%BA%97-209515929122406/");},2000);
 
@@ -57,17 +57,19 @@
 				$('#test-bar h3').text("訂單已送出");
 				console.log("訂單已送出");
 
-Jump();
-						break;
+				break;
 
 
-default:
+				default:
 
 }
 
-			}
-			navigation: true,
+},
+			slidesNavigation:'true',
+			navigationPosition:'left',
 			slidesNavPosition:'top',
+			scrollOverflow: 'true',
+
 		});
 
 
@@ -213,7 +215,8 @@ default:
 
 		</div>
 		<div class="section">
-			<p></h5>你的資料...</p>
+			<p>
+				</h5>你的資料...</p>
 			<form>
 				<div class="form-group">
 
@@ -236,7 +239,7 @@ default:
 	</div>
 
 	<div id="button-bar" class="row fixed-bottom">
-		<div id="sbutton_determine" class="col d-flex justify-content-center align-items-center" >
+		<div id="sbutton_determine" class="col d-flex justify-content-center align-items-center">
 			<a id="test-baer" href="#" class="" style="color:#fff" size="3">
 
 				<h3>
