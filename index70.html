@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--00.Default setting for RWD webpage-->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- sd -->
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<style>
+	.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+	</style>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script>
+	$(function(){
+		$('#dowebok').fullpage({
+			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+			'navigation': true,
+		});
+	});
+	</script>
+
+
+<!-- sd -->
+
+  <link rel="stylesheet" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/bootstrap.min.css">
+
+
+
+
+
+  <!-- <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+
+    .contain {
+      min-height: 50px;
+    }
+
+    .mid_div {
+      height: 15%;
+    }
+
+    #button_home {
+      width: 25%;
+      height: 55%;
+    }
+
+    .heading1a {
+      padding: 10px 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+      width: 110%;
+      margin: 150px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 150%;
+      height: 100%
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .2s;
+      opacity: .2;
+    }
+
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+
+    .redpoint {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      line-height: 16px;
+      text-align: center;
+      font-size: 0.1em;
+      border-radius: 16px;
+      color: #fff;
+      background: red;
+      position: relative;
+
+      right: -100%;
+
+    }
+  </style> -->
+
+
+  </script>
+
+  <!--D2.取餐時間模組-->
+  <!--Date time Picker CSS setting-->
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/bootstrap-clockpicker.min.css">
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/templatesize.css">
+
+  </script>
+
+
+  <!--E.浮動navbar-->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 50px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .navbar a:hover {
+      background: #f1f1f1;
+      color: black;
+    }
+
+    .navbar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .main {
+      padding: 28px;
+      margin-bottom: 30px;
+      width: auto;
+
+    }
+    .slick-slider{
+      margin: 50px;
+    }
+
+    /* .slick-dots li button:before {
+      content: "5";
+    } */
+    #topbar {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <!--建立點餐頁面的大容器-->
+  <div id="topbar" class="d-flex justify-content-center h-5z fixed-top">
+    <img src="img/logo.jpg" alt="">
+  </div>
+
+
+  <!--E.浮水印按鈕-->
+
+	<div id="dowebok">
+		<div class="section">
+			<h3>嗨!你好</h3>
+			<p>定訂單嗎</p>
+		</div>
+		<div class="section">
+			<h3>確認您的訂單</h3>
+			<p>|頂單|</p>
+		</div>
+		<div class="section">
+			<h3>快點輸入你的資料</h3>
+			<p>為你寄送</p>
+		</div>
+		<div class="section">
+			<h3>送出!</h3>
+			<p>感謝您的訂單!我們已經收到!</p>
+		</div>
+	</div>
+
+  <div id="button-bar" class="row fixed-bottom">
+
+
+    <div class="col d-flex justify-content-around align-items-end">
+      <a href="#" class="" style="color:#000" size="3">
+        <h3>修改訂單</h3>
+      </a>
+
+
+    </div>
+    <div id="button_determine" class="col d-flex justify-content-center align-items-center" style="background-color: #A0CE4E ">
+      <a href="#" class="" style="color:#fff" size="3">
+        <span class="redpoint">4</span>
+        <h3>
+
+          確定購買
+        </h3>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+</html>
