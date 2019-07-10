@@ -533,7 +533,7 @@
     </div>
     <div id="button_determine" class="col d-flex justify-content-center align-items-center" style="background-color: #ef5f96 ">
       <a href="./index70.html" class="" style="color:#fff" size="3">
-        <span  class="redpoint" style="display:none" ></span>
+        <!-- <span class="redpoint"></span> -->
         <h3>
 
           確定購買
@@ -607,11 +607,15 @@
       callback: function(indexArr, data) {
 
         data.push(thisData);
+
+        console.log(data);
+        //GetDivID();
         newData.push(data);
 
-
+        console.log("END");
+        console.log(newData.length);
+        // console.log(newData.size() );
         $(".redpoint").text(newData.length);
-        $(".redpoint").show();
 
       },
 
