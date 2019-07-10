@@ -1,0 +1,57 @@
+{
+  "_from": "bootstrap-horizon",
+  "_id": "bootstrap-horizon@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-VREUfU7hwQksXuc7PHXz30Sc+f4=",
+  "_location": "/bootstrap-horizon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "bootstrap-horizon",
+    "name": "bootstrap-horizon",
+    "escapedName": "bootstrap-horizon",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bootstrap-horizon/-/bootstrap-horizon-1.0.1.tgz",
+  "_shasum": "5511147d4ee1c1092c5ee73b3c75f3df449cf9fe",
+  "_spec": "bootstrap-horizon",
+  "_where": "C:\\xampp\\htdocs\\html_\\CompanyDemo",
+  "author": {
+    "name": "Pier-Luc Gendreau"
+  },
+  "bugs": {
+    "url": "https://github.com/Zertz/bootstrap-horizon/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Boostrap 3 rows with inline, horizontally scrolling columns",
+  "devDependencies": {
+    "clean-css": "^3.4.20"
+  },
+  "homepage": "https://github.com/Zertz/bootstrap-horizon#readme",
+  "keywords": [
+    "bootstrap",
+    "horizontal",
+    "scroll",
+    "row"
+  ],
+  "license": "MIT",
+  "main": "bootstrap-horizon.css",
+  "name": "bootstrap-horizon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zertz/bootstrap-horizon.git"
+  },
+  "scripts": {
+    "build": "npm run minify",
+    "minify": "cleancss -o dist/bootstrap-horizon.min.css src/bootstrap-horizon.css"
+  },
+  "version": "1.0.1"
+}
