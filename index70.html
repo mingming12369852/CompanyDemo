@@ -14,10 +14,15 @@
 			font: 50px "Microsoft Yahei";
 			color: #fff;
 		}
+
+		/* .tme {
+			background-color: #fff;
+		} */
 	</style>
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script>
+
 
 
 		function Jump(){
@@ -55,16 +60,11 @@ $('#test-bar h3').text("完成");
 
 
 	});
+
+
 	</script>
 
-
-	<!-- sd -->
-
 	<link rel="stylesheet" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/bootstrap.min.css">
-
-
-
-
 	</script>
 
 	<!--D2.取餐時間模組-->
@@ -73,10 +73,7 @@ $('#test-bar h3').text("完成");
 	<link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/bootstrap-clockpicker.min.css">
 	<link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/github.min.css">
 	<link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/templatesize.css">
-
 	</script>
-
-
 	<!--E.浮動navbar-->
 	<style>
 		body {
@@ -141,8 +138,7 @@ $('#test-bar h3').text("完成");
 	</div>
 
 
-	<!--E.浮水印按鈕-->
-
+	<!-- 主視窗拉靠杯 -->
 	<div id="dowebok">
 		<div class="section">
 			<p>確認你的訂單</p>
@@ -155,28 +151,37 @@ $('#test-bar h3').text("完成");
 							<th scope="col">系列</th>
 							<th scope="col">規格</th>
 							<th scope="col">杯數</th>
+							<th scope="col">價格</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
+
+						<tr class="tme">
 							<th scope="row">1</th>
 							<td>蟬吃綠茶</td>
 							<td>無糖|少冰|無|大杯</td>
 							<td>1杯</td>
+							<td>23元</td>
 						</tr>
-						<tr>
+					</tbody>
+					<tbody>
+
+						<tr class="tme">
 							<th scope="row">2</th>
 							<td>沒有這個茶</td>
 							<td>超甜|冰沙|無|巨大</td>
 							<td>99杯</td>
+							<td>239元</td>
 						</tr>
-						<tr>
+						<tr class="tme">
 							<th scope="row">3</th>
 							<td>沒有這個茶</td>
 							<td>超甜|冰沙|無|巨大</td>
 							<td>0杯</td>
-						</tr>
+							<td>40元</td>
+						</tr class="tme">
 						<tr>
+							<td> </td>
 							<td> </td>
 							<td> </td>
 							<th scope="row">總計杯數</th>
@@ -185,13 +190,13 @@ $('#test-bar h3').text("完成");
 						<tr>
 							<td> </td>
 							<td> </td>
+							<td> </td>
 							<th scope="row">總計金額</th>
 							<td>24萬元</td>
 						</tr>
 					</tbody>
 				</table>
 			</h5>
-
 
 
 		</div>
@@ -218,6 +223,9 @@ $('#test-bar h3').text("完成");
 
 		</div>
 	</div>
+	<!-- 主視窗拉靠杯 -->
+
+
 
 	<div id="button-bar" class="row fixed-bottom">
 		<div id="sbutton_determine" class="col d-flex justify-content-center align-items-center" style="display:none">
@@ -247,11 +255,13 @@ $('#test-bar h3').text("完成");
 	</div>
 
 
-</body>
 
-<script type="text/javascript">
-
-</script>
+	<script type="text/javascript">
+		$('.tme').on("click", function() {
+			console.log("靠杯，你點我幹嘛");
+			$(this).css('background-color', '#6332');
+		});
+	</script>
 
 
 
