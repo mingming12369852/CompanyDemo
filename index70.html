@@ -27,11 +27,7 @@
 		});}
 		$(function(){
 			$('#test-bar').on("click", function() {
-
-			console.log('hi');
-			fullpage.moveSectionDown();
-
-
+			$('#dowebok').fullpage.moveSectionDown();
 			});
 
 		$('#dowebok').fullpage({
@@ -39,30 +35,14 @@
 			scrollingSpeed:450,
 			afterLoad:function(index,anchorLink){
 
-				// if (anchorLink == 4) {
-				// console.log("END");
-				// $('#test-bar h3').text("完成");
-				// }
-				console.log(anchorLink);
-				switch (anchorLink) {
-
-					case 2:
-				$('#test-bar h3').text("確認你的訂單");
-						break;
-
-						case 3:
-					$('#test-bar h3').text("往下滑送出訂單");
-							break;
-					case 4:
-				$('#test-bar h3').text("訂單已送出");
-				console.log("訂單已送出");
-
-				break;
+				if (anchorLink == 3) {
+$('#test-bar h3').text("完成");
+				$('#sbutton_determine').remove();
 
 
-				default:
+				}
 
-}
+
 
 },
 			slidesNavigation:'true',
@@ -239,8 +219,8 @@
 	</div>
 
 	<div id="button-bar" class="row fixed-bottom">
-		<div id="sbutton_determine" class="col d-flex justify-content-center align-items-center">
-			<a id="test-baer" href="#" class="" style="color:#fff" size="3">
+		<div id="sbutton_determine" class="col d-flex justify-content-center align-items-center" style="display:none">
+			<a id="stest-baer" href="#" class="" style="color:#fff" size="3">
 
 				<h3>
 
@@ -255,7 +235,7 @@
 
 				<h3>
 
-					歡迎回來
+					下一步
 				</h3>
 
 			</a>
