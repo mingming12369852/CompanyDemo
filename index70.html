@@ -19,6 +19,9 @@
 			background-color: #fff;
 		} */
 	</style>
+	<!-- <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C2ScrollVertical/public.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C2ScrollVertical/mobileSelect.css">
+	<script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C2ScrollVertical/mobileSelect.js" type="text/javascript"></script>
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script>
@@ -33,6 +36,7 @@
 		$(function(){
 			$('#test-bar').on("click", function() {
 			$('#dowebok').fullpage.moveSectionDown();
+
 			});
 
 		$('#dowebok').fullpage({
@@ -42,7 +46,7 @@
 
 				if (anchorLink == 3) {
 $('#test-bar').attr("href","https://www.facebook.com/%E8%9F%AC%E5%90%83%E8%8C%B6%E3%81%AE%E5%A4%A9%E7%84%B6%E8%8C%B6%E9%A3%B2-%E5%90%B3%E8%88%88%E7%B8%BD%E5%BA%97-209515929122406/");
-$('#test-bar h3').text("完成");
+$('#test-bar h3').text("付款");
 				$('#sbutton_determine').remove();
 
 
@@ -141,8 +145,8 @@ $('#test-bar h3').text("完成");
 	<!-- 主視窗拉靠杯 -->
 	<div id="dowebok">
 		<div class="section">
-			<p>確認你的訂單</p>
-			<h4>| 往下滑繼續 |</h4>
+			<p>你的訂單</p>
+			<hr>
 			<h5>
 				<table class="table">
 					<thead>
@@ -156,11 +160,11 @@ $('#test-bar h3').text("完成");
 					</thead>
 					<tbody>
 
-						<tr class="tme">
+						<tr >
 							<th scope="row">1</th>
 							<td>蟬吃綠茶</td>
-							<td>無糖|少冰|無|大杯</td>
-							<td>1杯</td>
+							<td class="tme">無糖|少冰|無|大杯</td>
+							<td id="cap">1杯</td>
 							<td>23元</td>
 						</tr>
 					</tbody>
@@ -205,6 +209,7 @@ $('#test-bar h3').text("完成");
 		<div class="section">
 			<p>
 				</h5>你的資料...</p>
+							<hr>
 			<form>
 				<div class="form-group">
 
@@ -263,6 +268,95 @@ $('#test-bar h3').text("完成");
 			console.log("靠杯，你點我幹嘛");
 			$(this).css('background-color', '#6332');
 		});
+	</script>
+	<script type="text/javascript">
+		var thisData, thisID;
+		var newData = [];
+		var 糖量 = ['無糖', '少糖', '正常', '多糖'];
+		var 冰量 = ['去冰', '少冰', '正常', '熱溫'];
+		var 加料 = ['無', '珍珠', '愛玉', '果凍'];
+		var 杯型 = ['中杯', '大杯'];
+		var 杯數 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+		var 資料;
+
+		var mobileSelect2a = new MobileSelect({
+
+			trigger: '#cap',
+
+			title: '杯數',
+			wheels: [
+				{
+					data: 杯數
+				}
+			],
+			position: [0, 1, 0, 1, 0],
+			triggerDisplayData: false,
+
+
+			callback: function(indexArr, data) {
+					console.log(data);
+					$('#cap').fullpage.setAllowScrolling(true);
+			},
+		});
+
+
+		$("#cap").on("click", function() {
+
+$('#cap').fullpage.setAllowScrolling(false);
+		});
+
+		var mobileSelect1a = new MobileSelect({
+
+			trigger: '#tme',
+
+			title: '飲料規格選擇',
+			wheels: [{
+					data: 糖量
+				},
+				{
+					data: 冰量
+				},
+				{
+					data: 加料
+				},
+				{
+					data: 杯型
+				},
+				{
+					data: 杯數
+				}
+			],
+			position: [0, 1, 0, 1, 0],
+			triggerDisplayData: false,
+
+
+			callback: function(indexArr, data) {
+
+				data.push(thisData);
+
+				console.log(data);
+				//GetDivID();
+				newData.push(data);
+
+				console.log("END");
+				console.log(newData.length);
+				// console.log(newData.size() );
+				$(".redpoint").text(newData.length);
+
+			},
+		});
+		$(".m1").on("click", function() {
+
+			thisData = $(this).data('category');
+			thisID = $(this).attr('ID');
+			console.log(thisData + " " + thisID);
+			mobileSelect1a.show();
+			// console.log();
+		});
+
+		function GetDivID() {
+			console.log(mobileSelect1a.trigger.id);
+		}
 	</script>
 
 
