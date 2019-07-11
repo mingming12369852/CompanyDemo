@@ -185,7 +185,7 @@
 		renderWheels: function(wheelsData, cancelBtnText, ensureBtnText){
 			var _this = this;
 			var cancelText = cancelBtnText ? cancelBtnText : '取消';
-			var ensureText = ensureBtnText ? ensureBtnText : '确认';
+			var ensureText = ensureBtnText ? ensureBtnText : '確認';
 			_this.mobileSelect = document.createElement("div");
 			_this.mobileSelect.className = "mobileSelect";
 			_this.mobileSelect.innerHTML =

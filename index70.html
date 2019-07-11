@@ -14,6 +14,10 @@
 			font: 50px "Microsoft Yahei";
 			color: #fff;
 		}
+		.align-items-end {
+    -ms-flex-align: end!important;
+    align-items: flex-end!important;
+}
 
 		/* .tme {
 			background-color: #fff;
@@ -143,6 +147,7 @@
 
 
 	<!-- 主視窗拉靠杯 -->
+
 	<div id="dowebok">
 		<div class="section">
 			<p>訂單</p>
@@ -152,7 +157,7 @@
 					<thead>
 						<tr>
 
-							<th scope="col">系列</th>
+							<th scope="col">品項	</th>
 							<th scope="col">規格</th>
 							<th scope="col">杯數</th>
 							<th scope="col">價格</th>
@@ -231,7 +236,7 @@
 	</div>
 
 	<!-- 下方按鈕區塊 -->
-	<div id="down-bar" class="d-flex bd-highlight row fixed-bottom ">
+	<div id="down-bar" class="d-flex bd-highlight row fixed-bottom  d-flex justify-content-around align-items-end">
 		<div class="p-2 bd-highlight w-25 p-3 text-center">
 			<a id="addition" href="" class="row justify-content-between	" style="color:#fff" size="3">
 
