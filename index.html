@@ -478,116 +478,6 @@
         </div>
 
 
-
-        <!--D.取餐資訊-->
-
-        <!--把延伸展開效果從1.取餐方式至最後備注區域-->
-        <div class="menu" style="display: none;">
-
-          <div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
-
-            <label class="col-12 col-sm-12 col-md-12 col-lg-12 col-form-label form-control-label"> </label>
-            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">1.取餐方式</label>
-            <button id="hide外送地址" class="btn btn-primary  col-4 col-sm-4 col-md-4 col-lg-4">自取</button>
-            <button id="show外送地址" class="btn btn-primary col-4 col-sm-4 col-md-4 col-lg-4">外送</button>
-
-          </div>
-
-
-          <!--D2.取貨時間-->
-          <div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
-
-            <label class="col-12 col-sm-12 col-md-12 col-lg-12 col-form-label form-control-label"> </label>
-            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">2.取餐時間</label>
-            <!--Date time picker寫法-->
-
-            <div class="input-group clockpicker">
-              <input type="text" class="form-control" value="09:30">
-              <span class="input-group-addon">
-                <span class="glyphicon glyphicon-time"></span>
-              </span>
-            </div>
-
-          </div>
-
-
-          <!--D3.收貨人名字-->
-          <div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
-            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">3.收貨人</label>
-            <div class="col-9 col-sm-9 col-md-9 col-lg-9">
-              <input class="form-control" type="text" placeholder="輸入發起訂單人名字">
-            </div>
-          </div>
-
-          <!--D4.手機號碼-->
-          <div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
-            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">4.手機號碼</label>
-            <div class="col-9 col-sm-9 col-md-9 col-lg-9">
-              <input class="form-control" type="text" placeholder="輸入10個手機號碼">
-            </div>
-          </div>
-          <!--D5.單位名稱-->
-          <div class="form-group row  col-12 col-sm-12 col-md-12 col-lg-12">
-            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">5.單位名稱</label>
-            <div class="col-9 col-sm-9 col-md-9 col-lg-9">
-              <input class="form-control" type="text" placeholder="公司/學校/單位機構名稱">
-            </div>
-          </div>
-
-          <!--D6.統一編號-->
-          <div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
-            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">6.統一編號</label>
-            <div class="col-9 col-sm-9 col-md-9 col-lg-9 ">
-              <input class="form-control" type="text" placeholder="若沒有,則不需要">
-            </div>
-          </div>
-
-          <!--D7.備注-->
-          <div class="form-group row col-12 col-sm-12 col-md-12 col-lg-12">
-            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">7.備注</label>
-            <div class="col-9 col-sm-9 col-md-9 col-lg-9">
-              <input class="form-control" type="text" placeholder="有任何問題都可以提問">
-            </div>
-          </div>
-
-          <!--D8.外送地址-->
-          <div class="card-header col-12 col-sm-12 col-md-12 col-lg-12">
-
-            <!--A.取餐方式的最左邊文字-->
-            <h4 class="mb-0">A.製作訂單
-
-
-              <!--製作按鈕,點擊會引導接下來跳出新頁面功能-->
-              <button type="button" onClick="location.href='https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/B.%E6%96%B0%E8%9F%AC%E5%90%83%E8%8C%B6%E7%B3%BB%E7%B5%B1(%E6%9F%A5%E7%9C%8B%E6%B8%85%E5%96%AE).html'" class="btn btn-primary col-4 col-sm-4 col-md-4 col-lg-4">
-                上一筆訂單
-              </button>
-              <!--顯示取餐方式的第二個按鍵-->
-              <button type="button" class="btn btn-primary col-4 col-sm-4 col-md-4 col-lg-4  ">
-                建立新訂單
-              </button>
-            </h4>
-          </div>
-
-
-
-
-        </div>
-
-        <!--C.品項-->
-        <!--品項標題+内容的容器-->
-
-        <div class="menu外送地址" style="display: none;">
-          <div class="form-group row  col-12 col-sm-12 col-md-12 col-lg-12">
-
-            <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-form-label form-control-label">8.外送地址</label>
-            <div class="col-9 col-sm-9 col-md-9 col-lg-9">
-
-              <input class="form-control" type="text" placeholder="公司/學校/單位地址">
-            </div>
-          </div>
-        </div>
-
-        <!--結束從A.取餐方式到D.取餐資訊大容器-->
       </div>
 
     </div>
@@ -655,9 +545,13 @@
     var 冰量 = ['去冰', '少冰', '正常', '熱溫'];
     var 加料 = ['無', '珍珠', '愛玉', '果凍'];
     var 杯型 = ['中杯', '大杯'];
-    var 杯數 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-    var 資料
+    var 杯數 = [];
+    var 資料;
 
+      for (var i = 0; i < 100; i++) {
+        杯數[i] = i
+      }
+      console.log(i);
     var mobileSelect1a = new MobileSelect({
 
       trigger: '#trigger1a',

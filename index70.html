@@ -25,40 +25,40 @@
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script>
-
-
-
-		function Jump(){
-		$(document).ready(function () {setTimeout(function(){
-							 $.mobile.changePage("https://www.facebook.com/%E8%9F%AC%E5%90%83%E8%8C%B6%E3%81%AE%E5%A4%A9%E7%84%B6%E8%8C%B6%E9%A3%B2-%E5%90%B3%E8%88%88%E7%B8%BD%E5%BA%97-209515929122406/");},2000);
-
-		});}
+		var PageNumber ;
+		$('#modify ').on("click", function() {
+	console.log("hi");
+	});
 		$(function(){
+
+
+
+
+
+			// "下一步"
 			$('#test-bar').on("click", function() {
 			$('#dowebok').fullpage.moveSectionDown();
-
 			});
 
 		$('#dowebok').fullpage({
 			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
 			scrollingSpeed:450,
+			dragAndMove: false,
 			afterLoad:function(index,anchorLink){
-
-				if (anchorLink == 3) {
-$('#test-bar').attr("href","https://www.facebook.com/%E8%9F%AC%E5%90%83%E8%8C%B6%E3%81%AE%E5%A4%A9%E7%84%B6%E8%8C%B6%E9%A3%B2-%E5%90%B3%E8%88%88%E7%B8%BD%E5%BA%97-209515929122406/");
-$('#test-bar h3').text("付款");
-				$('#sbutton_determine').remove();
-
+				PageNumber = anchorLink;
+				switch (anchorLink) {
+					case 2:
+					$('#test-bar h3').text("立即送出");
+						break;
+					case 3:
+					$('#down-bar').remove();
+						break;
+					default:
 
 				}
-
-
-
-},
-			slidesNavigation:'true',
-			navigationPosition:'left',
-			slidesNavPosition:'top',
-			scrollOverflow: 'true',
+		},afterRender:function(){
+				$.fn.fullpage.setAllowScrolling(false);
+				}
 
 		});
 
@@ -78,7 +78,7 @@ $('#test-bar h3').text("付款");
 	<link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/github.min.css">
 	<link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/templatesize.css">
 	</script>
-	<!--E.浮動navbar-->
+	<!--自定義CSS-->
 	<style>
 		body {
 			margin: 0;
@@ -145,13 +145,13 @@ $('#test-bar h3').text("付款");
 	<!-- 主視窗拉靠杯 -->
 	<div id="dowebok">
 		<div class="section">
-			<p>你的訂單</p>
+			<p>訂單</p>
 			<hr>
 			<h5>
 				<table class="table">
 					<thead>
 						<tr>
-							<th scope="col">#</th>
+
 							<th scope="col">系列</th>
 							<th scope="col">規格</th>
 							<th scope="col">杯數</th>
@@ -160,8 +160,7 @@ $('#test-bar h3').text("付款");
 					</thead>
 					<tbody>
 
-						<tr >
-							<th scope="row">1</th>
+						<tr>
 							<td>蟬吃綠茶</td>
 							<td class="tme">無糖|少冰|無|大杯</td>
 							<td id="cap">1杯</td>
@@ -171,33 +170,33 @@ $('#test-bar h3').text("付款");
 					<tbody>
 
 						<tr class="tme">
-							<th scope="row">2</th>
+
 							<td>沒有這個茶</td>
 							<td>超甜|冰沙|無|巨大</td>
 							<td>99杯</td>
 							<td>239元</td>
+
 						</tr>
 						<tr class="tme">
-							<th scope="row">3</th>
+
 							<td>沒有這個茶</td>
 							<td>超甜|冰沙|無|巨大</td>
 							<td>0杯</td>
 							<td>40元</td>
+
 						</tr class="tme">
 						<tr>
-							<td> </td>
-							<td> </td>
+							<td></td>
+
 							<th scope="row">總計杯數</th>
-							<td> </td>
+							<td></td>
 
 							<td>100杯</td>
 						</tr>
 						<tr>
-							<td> </td>
-							<td> </td>
+							<td></td>
 							<th scope="row">總計金額</th>
 							<td> </td>
-
 							<td>24萬元</td>
 						</tr>
 					</tbody>
@@ -208,8 +207,8 @@ $('#test-bar h3').text("付款");
 		</div>
 		<div class="section">
 			<p>
-				</h5>你的資料...</p>
-							<hr>
+				</h5>資料</p>
+			<hr>
 			<form>
 				<div class="form-group">
 
@@ -230,24 +229,28 @@ $('#test-bar h3').text("付款");
 
 		</div>
 	</div>
-	<!-- 主視窗拉靠杯 -->
 
-
-
-	<div id="button-bar" class="row fixed-bottom">
-		<div id="sbutton_determine" class="col d-flex justify-content-center align-items-center" style="display:none">
-			<a id="stest-baer" href="./index.html" class="" style="color:#fff" size="3">
+	<!-- 下方按鈕區塊 -->
+	<div id="down-bar" class="d-flex bd-highlight row fixed-bottom ">
+		<div class="p-2 bd-highlight w-25 p-3 text-center">
+			<a id="addition" href="" class="row justify-content-between	" style="color:#fff" size="3">
 
 				<h3>
 
-					<!-- <img src="img/png/add-2.png" class="img-fluid" alt="" style="height:25%;width:25%"> -->
-					新增飲料
+					新增
 				</h3>
-
 			</a>
-
 		</div>
-		<div id="button_determine" class="col d-flex justify-content-center align-items-center" style="background-color: #ef5f96 ">
+		<div  class="p-2 bd-highlight w-25 p-3	text-center">
+			<a id="modify" href="" class="row justify-content-between	" style="color:#fff" size="3">
+
+				<h3>
+
+					修改
+				</h3>
+			</a>
+		</div>
+		<div class="p-2 bd-highlight flex-grow-1 d-flex justify-content-center" id="button_determine" style="background-color: #ef5f96 ">
 			<a id="test-bar" href="#" class="" style="color:#fff" size="3">
 
 				<h3>
@@ -256,16 +259,12 @@ $('#test-bar h3').text("付款");
 				</h3>
 
 			</a>
-
 		</div>
-
 	</div>
 
-
-
+<!-- 修改杯數 -->
 	<script type="text/javascript">
 		$('.tme').on("click", function() {
-			console.log("靠杯，你點我幹嘛");
 			$(this).css('background-color', '#6332');
 		});
 	</script>
@@ -284,79 +283,26 @@ $('#test-bar h3').text("付款");
 			trigger: '#cap',
 
 			title: '杯數',
-			wheels: [
-				{
-					data: 杯數
-				}
-			],
-			position: [0, 1, 0, 1, 0],
-			triggerDisplayData: false,
-
-
-			callback: function(indexArr, data) {
-					console.log(data);
-					$('#cap').fullpage.setAllowScrolling(true);
-			},
-		});
-
-
-		$("#cap").on("click", function() {
-
-$('#cap').fullpage.setAllowScrolling(false);
-		});
-
-		var mobileSelect1a = new MobileSelect({
-
-			trigger: '#tme',
-
-			title: '飲料規格選擇',
 			wheels: [{
-					data: 糖量
-				},
-				{
-					data: 冰量
-				},
-				{
-					data: 加料
-				},
-				{
-					data: 杯型
-				},
-				{
-					data: 杯數
-				}
-			],
+				data: 杯數
+			}],
 			position: [0, 1, 0, 1, 0],
 			triggerDisplayData: false,
 
 
 			callback: function(indexArr, data) {
-
-				data.push(thisData);
-
 				console.log(data);
-				//GetDivID();
-				newData.push(data);
-
-				console.log("END");
-				console.log(newData.length);
-				// console.log(newData.size() );
-				$(".redpoint").text(newData.length);
+				$('#cap').fullpage.setAllowScrolling(true);
 
 			},
 		});
-		$(".m1").on("click", function() {
 
-			thisData = $(this).data('category');
-			thisID = $(this).attr('ID');
-			console.log(thisData + " " + thisID);
-			mobileSelect1a.show();
-			// console.log();
-		});
 
 		function GetDivID() {
 			console.log(mobileSelect1a.trigger.id);
 		}
+
+
 	</script>
 
 

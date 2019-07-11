@@ -24,3 +24,34 @@ https://github.com/onlyhom/mobileSelect.js/blob/master/docs/README-CN.md
 
 jQuery全屏滚动插件fullPage.js演示
 http://www.dowebok.com/demo/2014/77/
+
+  jQuery全屏滚动插件FullPage.js中文帮助文档API
+  http://www.uedsc.com/fullpage.html
+
+
+
+1.整理每項噌能， 細分凜面的功能。
+2.封閉測試，自行勾選選項內的功能，才不ˊ會那麼累
+
+
+
+
+先確認一下這個gif的需求：
+1.用途線上一番賞的gif（網頁、app或社群網站使用），需要出透明背景的序列圖檔嗎？
+A：需要，如果背景沒有透明化，可能會造成籤上面邊框留白的問題
+
+
+2.做個模板，套60到80個不同的獎項
+2A：是的，有模板後，會複製n個獎項。
+主要會分成6~8類的模板 (依照一番賞該主題公布的獎項數量 做調整)
+A獎 ->套用10個
+B獎 ->套用25個
+C獎 ->套用65個
+...以此類推
+
+
+3.gif的長度大概5秒？
+3A：GIF長度必須>=5秒 (可以接受5秒)
+
+4.是否有些許的預算？（或是需要看動畫demo？）
+4A：
