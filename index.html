@@ -75,21 +75,13 @@
     }
 
 
-    .redpoint {
-      display: inline-block;
-      height: 16px;
-      width: 16px;
-      line-height: 16px;
-      text-align: center;
-      font-size: 0.1em;
-      border-radius: 16px;
-      color: #fff;
-      background: red;
-      position: relative;
-
-      right: -100%;
-
+    .badge{
+      background-color : red;
     }
+    .btn-primary {
+      background-color: #fff;
+    }
+
   </style>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <!--B2.圖片變成按鈕-->
@@ -134,20 +126,6 @@
   <link href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css" />
 
 
-
-  <!--D3.取餐資訊外送地址
-   外送按鍵新增第8項外送地址輸入
-   取餐按鍵隱藏外送地址輸入-->
-  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D3DeleverAddress/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-  $("#hide外送地址").click(function(){
-    $(".menu外送地址").hide();
-  });
-  $("#show外送地址").click(function(){
-    $(".menu外送地址").show();
-  });
-});
 
 
 
@@ -195,13 +173,20 @@
       width: auto;
 
     }
-    .slick-slider{
+
+    .slick-slider {
       margin: 50px;
     }
-.mid_div{
-  width: 100%;
-}
 
+    .mid_div {
+      width: 100%;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #ef5f96 ;
+      border-color: #ef5f96
+    }
     /* .slick-dots li button:before {
       content: "5";
     } */
@@ -224,267 +209,267 @@
     <img src="img/logo.jpg" alt="">
   </div>
 
-<hr>
-<div class="your-class">
-  <div> <input type="radio" name="gender" class="sr-only">
-    <label for="male" class="haha" data-index="1">
-      <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
-      <a href="#">健康茶飲</a>
-    </label>
+  <hr>
+  <div class="your-class">
+    <div> <input type="radio" name="gender" class="sr-only">
+      <label for="male" class="haha" data-index="1">
+        <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
+        <a href="#">健康茶飲</a>
+      </label>
+    </div>
+    <div> <input type="radio" name="gender" class="sr-only">
+      <label for="male" class="haha" data-index="2">
+        <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
+        <a href="#">生活小品</a>
+      </label>
+    </div>
+    <div> <input type="radio" name="gender" class="sr-only">
+      <label for="male" class="haha" data-index="3">
+        <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
+      </label>
+    </div>
+    <div> <input type="radio" name="gender" class="sr-only">
+      <label for="male" class="haha" data-index="4">
+        <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
+      </label>
+    </div>
+    <div> <input type="radio" name="gender" class="sr-only">
+      <label for="male" class="haha" data-index="5">
+        <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
+      </label>
+    </div>
   </div>
-  <div> <input type="radio" name="gender" class="sr-only">
-    <label for="male" class="haha" data-index="2">
-      <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
-      <a href="#">生活小品</a>
-    </label>
-  </div>
-  <div> <input type="radio" name="gender" class="sr-only">
-    <label for="male" class="haha" data-index="3">
-      <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
-    </label>
-  </div>
-  <div> <input type="radio" name="gender" class="sr-only">
-    <label for="male" class="haha" data-index="4">
-      <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
-    </label>
-  </div>
-  <div> <input type="radio" name="gender" class="sr-only">
-    <label for="male" class="haha" data-index="5">
-      <img src="https://rottie.000webhostapp.com/00蟬吃茶2.1/01Photo/10可可.jpg">
-    </label>
-  </div>
-</div>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.your-class').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 2,
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.your-class').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+      });
     });
-  });
-</script>
-<hr>
+  </script>
+  <hr>
   <div class="mid_div">
 
 
-      <div class="card">
-        <!--品項標題的容器-->
+    <div class="card">
+      <!--品項標題的容器-->
 
 
-        <!--品項内容的容器-->
+      <!--品項内容的容器-->
 
 
 
-        <!--1st大項的所有品項容器-->
-        <!--1st大項的隨著變動功能(放在整個容器前面,功能才會實現)-->
-        <div class="menu大項1蟬吃茶 mw-100" style="display: none;">
-          <!--tag -->
-          <section class="container " style="">
-            <div class="row d-flex justify-content-around" style="">
-              <!--1st大項所有品項的較小容器-->
+      <!--1st大項的所有品項容器-->
+      <!--1st大項的隨著變動功能(放在整個容器前面,功能才會實現)-->
+      <div class="menu大項1蟬吃茶 mw-100" style="display: none;">
+        <!--tag -->
+        <section class="container " style="">
+          <div class="row d-flex justify-content-around" style="">
+            <!--1st大項所有品項的較小容器-->
 
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger1a" data-category="蟬吃綠茶">
-                    蟬吃綠茶
-                  </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger1a" data-category="蟬吃綠茶">
+                  蟬吃綠茶
                 </div>
               </div>
+            </div>
 
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger2a" data-category="蟬吃奶茶">
-                    蟬吃奶茶
-                  </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger2a" data-category="蟬吃奶茶">
+                  蟬吃奶茶
                 </div>
               </div>
+            </div>
 
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="03蟬吃梨山茶">
-                    蟬吃梨山茶
-                  </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="03蟬吃梨山茶">
+                  蟬吃梨山茶
                 </div>
               </div>
+            </div>
 
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="03蟬吃梨山茶">
-                    蟬吃梨山茶
-                  </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="03蟬吃梨山茶">
+                  蟬吃梨山茶
                 </div>
               </div>
-              <div class="d-flex " id="accordion" role="tablist" style="" aria-multiselectable="true">
+            </div>
+            <div class="d-flex " id="accordion" role="tablist" style="" aria-multiselectable="true">
 
 
 
 
-
-
-              </div>
 
 
             </div>
-          </section>
-        </div>
-
-        <div class="menu大項2蟬吃茶" style="display: none;">
-          <section class="container " style="">
-            <div class="row d-flex justify-content-around" style="">
-              <!--1st大項所有品項的較小容器-->
-
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger1a" data-category="蟬吃拿鐵">
-                    蟬吃拿鐵
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger2a" data-category="蟬吃咖啡">
-                    蟬吃咖啡
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex " id="accordion" role="tablist" style="" aria-multiselectable="true">
 
 
-
-
-
-
-              </div>
-
-
-            </div>
-          </section>
-        </div>
-
-        <div class="menu大項3蟬吃茶" style="display: none;">
-          <section class="container " style="">
-            <div class="row d-flex justify-content-around" style="">
-              <!--1st大項所有品項的較小容器-->
-
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger1a" data-category="蟬吃拿鐵">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger2a" data-category="蟬吃咖啡">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-warning" style="">
-                <div class="panel-heading" role="tab">
-                  <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
-                    蟬吃種烘培
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="d-flex " id="accordion" role="tablist" style="" aria-multiselectable="true">
-
-
-
-
-
-
-              </div>
-
-
-            </div>
-          </section>
-        </div>
-
-
+          </div>
+        </section>
       </div>
+
+      <div class="menu大項2蟬吃茶" style="display: none;">
+        <section class="container " style="">
+          <div class="row d-flex justify-content-around" style="">
+            <!--1st大項所有品項的較小容器-->
+
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger1a" data-category="蟬吃拿鐵">
+                  蟬吃拿鐵
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger2a" data-category="蟬吃咖啡">
+                  蟬吃咖啡
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="d-flex " id="accordion" role="tablist" style="" aria-multiselectable="true">
+
+
+
+
+
+
+            </div>
+
+
+          </div>
+        </section>
+      </div>
+
+      <div class="menu大項3蟬吃茶" style="display: none;">
+        <section class="container " style="">
+          <div class="row d-flex justify-content-around" style="">
+            <!--1st大項所有品項的較小容器-->
+
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger1a" data-category="蟬吃拿鐵">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger2a" data-category="蟬吃咖啡">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-warning" style="">
+              <div class="panel-heading" role="tab">
+                <div class="m1" id="trigger3a" data-category="蟬吃種烘培 ">
+                  蟬吃種烘培
+                </div>
+              </div>
+            </div>
+
+
+            <div class="d-flex " id="accordion" role="tablist" style="" aria-multiselectable="true">
+
+
+
+
+
+
+            </div>
+
+
+          </div>
+        </section>
+      </div>
+
 
     </div>
 
+  </div>
 
 
-<img src="img/20190710185114.gif" alt="">
+
+  <img src="img/20190710185114.gif" alt="">
 
 
 
@@ -503,12 +488,15 @@
     <div id="button_determine" class="col d-flex justify-content-center align-items-center" style="background-color: #ef5f96 ">
       <a href="./index70.html" class="" style="color:#fff" size="3">
         <!-- <span class="redpoint"></span> -->
-        <h3>
 
-          確定購買
-        </h3>
+        <button type="button" class="btn btn-primary button-time">
+          確定購買 <span class="badge badge-light redpoint"></span>
+        </button>
 
       </a>
+
+
+
 
     </div>
 
@@ -548,10 +536,10 @@
     var 杯數 = [];
     var 資料;
 
-      for (var i = 0; i < 100; i++) {
-        杯數[i] = i
-      }
-      console.log(i);
+    for (var i = 1; i < 100; i++) {
+      杯數[i-1] = i
+    }
+    console.log(i);
     var mobileSelect1a = new MobileSelect({
 
       trigger: '#trigger1a',
@@ -588,7 +576,7 @@
         console.log("END");
         console.log(newData.length);
         // console.log(newData.size() );
-        $(".redpoint").text(newData.length);
+        $(".redpoint").text(newData.length+"筆");
 
       },
     });
