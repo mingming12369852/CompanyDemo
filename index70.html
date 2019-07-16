@@ -36,9 +36,6 @@
 		$(function(){
 
 
-
-
-
 			// "下一步"
 
 
@@ -50,7 +47,9 @@
 				PageNumber = anchorLink;
 				switch (anchorLink) {
 					case 2:
+					$('#test-bar').attr("href", "http://127.0.0.1/html_/CompanyDemo/setData.php#")
 					$('#test-bar h3').text("立即送出");
+
 						break;
 					case 3:
 					$('#down-bar').remove();
@@ -59,7 +58,7 @@
 
 				}
 		},afterRender:function(){
-				$.fn.fullpage.setAllowScrolling(false);
+				// $.fn.fullpage.setAllowScrolling(false);
 				}
 
 		});
@@ -265,49 +264,52 @@
 		</div>
 	</div>
 
-<!-- 修改杯數 -->
-	<script type="text/javascript">
-		$('.tme').on("click", function() {
-			$(this).css('background-color', '#6332');
-		});
-	</script>
-	<script type="text/javascript">
-		var thisData, thisID;
-		var newData = [];
-		var 糖量 = ['無糖', '少糖', '正常', '多糖'];
-		var 冰量 = ['去冰', '少冰', '正常', '熱溫'];
-		var 加料 = ['無', '珍珠', '愛玉', '果凍'];
-		var 杯型 = ['中杯', '大杯'];
-		var 杯數 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-		var 資料;
 
-		var mobileSelect2a = new MobileSelect({
+	<!-- 修改杯數 -->
+		<script type="text/javascript">
+			$('.tme').on("click", function() {
+				$(this).css('background-color', '#6332');
+			});
+		</script>
+		<script type="text/javascript">
+			var thisData, thisID;
+			var newData = [];
+			var 糖量 = ['無糖', '少糖', '正常', '多糖'];
+			var 冰量 = ['去冰', '少冰', '正常', '熱溫'];
+			var 加料 = ['無', '珍珠', '愛玉', '果凍'];
+			var 杯型 = ['中杯', '大杯'];
+			var 杯數 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+			var 資料;
 
-			trigger: '#cap',
+			var mobileSelect2a = new MobileSelect({
 
-			title: '杯數',
-			wheels: [{
-				data: 杯數
-			}],
-			position: [0, 1, 0, 1, 0],
-			triggerDisplayData: false,
+				trigger: '#cap',
 
-
-			callback: function(indexArr, data) {
-				console.log(data);
-				$('#cap').fullpage.setAllowScrolling(true);
-
-			},
-		});
+				title: '杯數',
+				wheels: [{
+					data: 杯數
+				}],
+				position: [0, 1, 0, 1, 0],
+				triggerDisplayData: false,
 
 
-		function GetDivID() {
-			console.log(mobileSelect1a.trigger.id);
-		}
+				callback: function(indexArr, data) {
+					console.log(data);
+					$('#cap').fullpage.setAllowScrolling(true);
+
+				},
+			});
 
 
-	</script>
+			function GetDivID() {
+				console.log(mobileSelect1a.trigger.id);
+			}
 
+
+		</script>
+</body>
+
+<!-- //setData.php -->
 
 
 
