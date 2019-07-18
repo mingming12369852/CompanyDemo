@@ -13,7 +13,7 @@ https: //codepen.io/bok770/pen/qXZyPN
 https: //bootstrap.hexschool.com/docs/4.2/utilities/flex/?
 
   网页上的小红点如何实现的？ ?
-  https : //segmentfault.com/q/1010000004178729
+    https : //segmentfault.com/q/1010000004178729
 
   [套件] Slick Carousel支援手勢左右滑動， 與RWD圖片輪播系統
 http: //kenwheeler.github.io/slick/
@@ -26,78 +26,3 @@ http: //www.dowebok.com/demo/2014/77/
 
   jQuery全屏滚动插件FullPage.js中文帮助文档API
 http: //www.uedsc.com/fullpage.html
-
-
-
-  1. 整理每項噌能， 細分凜面的功能。
-2. 封閉測試， 自行勾選選項內的功能， 才不ˊ會那麼累
-
-
-
-
-先確認一下這個gif的需求：
-1. 用途線上一番賞的gif（ 網頁、 app或社群網站使用）， 需要出透明背景的序列圖檔嗎？
-A： 需要， 如果背景沒有透明化， 可能會造成籤上面邊框留白的問題
-
-
-2. 做個模板， 套60到80個不同的獎項
-2 A： 是的， 有模板後， 會複製n個獎項。
-主要會分成6~8 類的模板(依照一番賞該主題公布的獎項數量 做調整)
-A獎 - > 套用10個
-B獎 - > 套用25個
-C獎 - > 套用65個
-  ...以此類推
-
-
-3. gif的長度大概5秒？
-3 A： GIF長度必須 >= 5 秒(可以接受5秒)
-
-4. 是否有些許的預算？（ 或是需要看動畫demo？）
-4 A：
-
-
-藍芽客戶放掉。
-機器人架設
-廟會APP 設計
-
-
-
-英遠資訊(30~1h)
-一番賞yFarim(上午的時間)
-禪吃茶資料庫建設(整天)
->>備註、吸管。
-
-其他：
-林口jfreey  (待確認。)
-//一番賞動畫製作
-
-
-目標 一周內上線測試(不包襪)。
-
-茶店的人員管理，試著不要只會埋頭苦幹。
-
-合理性，正確性
-
-
-
-
-
-參考素材>>>>>>
-1.日本官方一番賞：
-http://www.banpresto.jp/cn/
-
-2.台灣轉蛋網站-蛋舖:
-https://www.91toy.com.tw/
-
-
-可用模板(需修改)>>>>>>>
-來源>https://templated.co
-
-1.Phase Shift:
-https://templated.co/phaseshift
-
-2.Ex Machina:
-https://templated.co/exmachina
-
-3.Porphyrio
-https://templated.co/porphyrio

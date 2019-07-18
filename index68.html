@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--00.Default setting for RWD webpage-->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/00DefaultSetting/bootstrap.min.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .contain {
+      min-height: 50px;
+    }
+
+    .mid_div {
+      height: 10%;
+    }
+
+    #button_home {
+      width: 25%;
+      height: 55%;
+    }
+
+    .heading1a {
+      padding: 10px 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+      width: 100%;
+      margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      height: 100%
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!--B2.圖片變成按鈕-->
+  <link rel="stylesheet" href="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/B2Img2Btn/imgbtn.css">
+
+  <!--C.品項-->
+  <!--Collapse Bootstrap 4-->
+  <link rel="stylesheet" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C1Collapse/collapse.css">
+  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C1Collapse/collapse.js"></script>
+  <link rel="stylesheet" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C1Collapse/font-awesome.min.css">
+
+  <!--規格修改-->
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C2ScrollVertical/public.css">
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C2ScrollVertical/mobileSelect.css">
+  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/C2ScrollVertical/mobileSelect.js" type="text/javascript"></script>
+
+  </script>
+  <!--c2.品項隨大項變動-->
+  <script src="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/C3ConnectB-C/jquery.min.js"></script>
+
+
+
+  <!--D.取餐資訊Hide&Display-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <!--D1.取餐資訊標題按下后顯示隱藏文字-->
+  <script src="https://rottie.000webhostapp.com/00%E8%9F%AC%E5%90%83%E8%8C%B62.1/02Template/Template/00MainPage/D1TitleHideDisplay/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#show').click(function() {
+        $('.menu').show("slide");
+      });
+    });
+  </script>
+
+  <!--D2.取餐時間模組-->
+  <!--Date time Picker CSS setting-->
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/bootstrap-clockpicker.min.css">
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/00DefaultSetting(CSS)/templatesize.css">
+
+  <link href="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D2TimePicker/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css" />
+
+
+
+  <!--D3.取餐資訊外送地址
+   外送按鍵新增第8項外送地址輸入
+   取餐按鍵隱藏外送地址輸入-->
+  <script src="https://rottie.000webhostapp.com/00蟬吃茶2.1/02Template/Template/00MainPage/D3DeleverAddress/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+  $("#hide外送地址").click(function(){
+    $(".menu外送地址").hide();
+  });
+  $("#show外送地址").click(function(){
+    $(".menu外送地址").show();
+  });
+});
+
+
+
+  </script>
+
+
+  <!--E.浮動navbar-->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .a.h3 {
+      margin-top: 10px;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 50px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .navbar a:hover {
+      background: #f1f1f1;
+      color: black;
+    }
+
+    .navbar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .main {
+      padding: 28px;
+      margin-bottom: 30px;
+    }
+
+    .slick-dots li button:before {
+      content: "0";
+    }
+  </style>
+
+  <!--E1.左邊浮動按鈕換文字-->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+
+<body>
+
+
+
+  <!--建立點餐頁面的大容器-->
+  <div id="topbar" class="d-flex justify-content-center h-5z">
+    <img src="img/logo.jpg" alt="">
+  </div>
+
+  <!-- tag1 -->
+  <!--創造大盒子,製作點餐頁面-->
+  <div class="w-auto p-3 mh-100 " style="height: 100px; background-color: rgba(255,0,0,0.1);">
+    <div class="card h-75 d-inline-block w-100 p-3">
+
+      <h1>你的訂單</h1>
+    </div>
+
+  </div>
+
+  <!--A.取餐方式的盒子-->
+  <div class="mid_div">
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+  <!--E.浮水印按鈕-->
+
+  <div id="button-bar" class="row fixed-bottom" style="border-width:3px;border-style:dashed;border-color:#FFAC55;padding:5px;">
+
+
+    <div class="col d-flex justify-content-around align-items-end">
+      <a href="#" class="" style="color:#000" size="3">
+        <h3>修改訂單</h3>
+      </a>
+
+
+    </div>
+    <div id="button_determine" class="col d-flex justify-content-center align-items-center" style="background-color: #A0CE4E ">
+      <a href="#" class="" style="color:#fff" size="3">
+        <h3>確定購買</h3>
+      </a>
+
+    </div>
+
+  </div>
+
+  </div>
+
+
+  <!--Date time picker Core setting-->
+
+
+
+
+
+  <!-- 20190703 修復選單不自動收回 -->
+  <script type="text/javascript">
+    var number = 1;
+    $('.menu大項' + number + '蟬吃茶').toggle("slide");
+    //初始化  網頁打開時預設先打開1菜單
+    $(".haha").on("click", function() {
+      var number2 = $(this).data("index");
+
+      if (number2 != number) {
+        $('.menu大項' + number + '蟬吃茶').toggle("slide"); //收回上次的選單
+        $('.menu大項' + number2 + '蟬吃茶').toggle("slide"); //打開當前指令
+        number = number2;
+      }
+    });
+  </script>
+
+
+</html>
